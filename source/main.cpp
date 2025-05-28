@@ -35,8 +35,8 @@ private:
     string _name;
     int _duration;
 
-    public:
-    Track() {
+    public: //Constructors
+    Track() { //Track Initializations
         _name = "no track name";
         _duration = 0;
 
