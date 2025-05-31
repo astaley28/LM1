@@ -5,14 +5,16 @@
 using namespace std;
 
 class Track {
-private:
-    string _name;
-    int _duration;
+private:    //Constructors
+    string _trackName;
+    int _duration; //duration will be in seconds, so that I can divide by 60 for minutes and % by 60 for seconds
 
-    public: //Constructors
-    Track() { //Track Initializations
-        _name = "no track name";
-        _duration = 0;
-    }
+    public: 
+    Track ();
+    Track(string trackName, int duration); 
+    
+    string getTrackName() { return _trackName; }
+    int getDuration() { return _duration; }
+  
 };
 #endif
