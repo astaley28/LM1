@@ -7,7 +7,7 @@ using namespace std;
 class Track {
 private:    //Constructors
     string _trackName;
-    int _duration; //duration will be in seconds, so that I can divide by 60 for minutes and % by 60 for seconds
+    int _duration;  //duration will be in seconds, so that I can divide by 60 for minutes and % by 60 for seconds
 
     public: 
     Track ();
@@ -15,6 +15,7 @@ private:    //Constructors
     
     string getTrackName() { return _trackName; }
     int getDuration() { return _duration; }
-  
+
+    
 };
 #endif
